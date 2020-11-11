@@ -1,4 +1,4 @@
-# ChartsJS
+# ChartsJS add-on
 
 ![image](image.png)
 
