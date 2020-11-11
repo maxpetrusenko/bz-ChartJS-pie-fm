@@ -8,12 +8,12 @@ For a pie chart, datasets need to contain an array of data points. The data poin
 You also need to specify an array of labels so that tooltips appear correctly.
 
 • Enter data manually:
-	```
-	- Click "Settings" icon.
-	- Click "Get Started" button.
-	- Click "Data" tab.
-	- Enter data into Data and Label fields.
-	```
+```
+	Click "Settings" icon.
+	Click "Get Started" button.
+	Click "Data" tab.
+	Enter data into Data and Label fields.
+```
 
 • Import data using script to set "BZ_CHARTJS_PIE::data" and "BZ_CHARTJS_PIE::labels" fields:
 	```
