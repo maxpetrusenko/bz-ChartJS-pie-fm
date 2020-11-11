@@ -1,5 +1,7 @@
 # ChartsJS
 
+![image](image.png)
+
 ## Data Structure: 
 
 For a pie chart, datasets need to contain an array of data points. The data points should be a number, Chart.js will total all of the numbers and calculate the relative proportion of each.
