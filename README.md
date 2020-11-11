@@ -1,6 +1,6 @@
 # ChartsJS
 
-![alt text](img.jpg)
+![image](img.png)
 
 ## Data Structure: 
 
