@@ -10,6 +10,7 @@ You also need to specify an array of labels so that tooltips appear correctly.
 
 • Enter data manually:
 ```
+	Create a relationship between "YOUR_SOLUTION" and "BZ_CHARTJS_PIE" Table.
 	Click "Settings" icon.
 	Click "Get Started" button.
 	Click "Data" tab.
@@ -18,6 +19,7 @@ You also need to specify an array of labels so that tooltips appear correctly.
 
 • Import data using script to set "BZ_CHARTJS_PIE::data" and "BZ_CHARTJS_PIE::labels" fields:
 ```
+	Create a relationship between "YOUR_SOLUTION" and "BZ_CHARTJS_PIE" Table.
 	Set Variable : [ $_data ; Value: "[1,2,3,4,5]" ]
 	Set Variable : [ $_labels ; Value: ""[\"one\",\"two\",\"three\",\"four\",\"five\"]"" ]
 	Set Field [ BZ_CHARTJS_PIE::data ; $_data ]
@@ -27,6 +29,7 @@ You also need to specify an array of labels so that tooltips appear correctly.
 
 • Import data using Execute FileMaker Data API script step:
 ```
+	Create a relationship between "DATA" and "BZ_CHARTJS_PIE" Table.
 	Table where your data lives MUST have fields called "DATA" and "LABELS".
 	Create separate layout for data api calls. Place "DATA" and "LABEL" field on visible part of layout.
 	Go to "Scripts -> Script Workspace -> BZ_CHARTJS_PIE -> getData".
@@ -36,7 +39,7 @@ You also need to specify an array of labels so that tooltips appear correctly.
 
 • Import data using data from related fields:
 ```
-	Create a needed relationship.
+	Create a relationship between "DATA" and "BZ_CHARTJS_PIE" Table.
 	Open File -> Manage -> Database.
 	Select "BZ_CHARTJS_PIE" table. Click on "CHART_OBJECT" field. Select Options.
 	Edit line "	~json = If ( IsEmpty ( data )  ; ~json ; JSONSetElement ( ~json ; "data.datasets[0].data"  ; data ; 4 ));".
