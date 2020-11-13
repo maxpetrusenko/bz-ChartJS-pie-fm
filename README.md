@@ -43,5 +43,7 @@ You also need to specify an array of labels so that tooltips appear correctly.
 	Replace it with "~json = If ( IsEmpty ( YourRelatedFieldName ) ; ~json ; JSONSetElement ( ~json ; "data.datasets[0].data"  ; charts.ListToArray ( YourRelatedFieldName ) ; 4 ));"
 	Edit line "	~json = If ( IsEmpty ( labels )  ; ~json ; JSONSetElement ( ~json ; "data.labels"  ; labels ; 4 ));".
 	Replace it with line "	~json = If ( IsEmpty ( DATA::LABEL ) ; ~json ; JSONSetElement ( ~json ; "data.labels"  ; charts.ListToArray ( DATA::LABEL ) ; 4 ));
+	Click Ok -> Ok -> Ok.
+	Remove Data from "data" and "labels" fields from Setting -> Get Started -> Data.
 ```
 
