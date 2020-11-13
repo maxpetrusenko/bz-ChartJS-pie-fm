@@ -10,11 +10,11 @@ You also need to specify an array of labels so that tooltips appear correctly.
 
 • Enter data manually:
 ```
-	Create a relationship between "YOUR_SOLUTION" and "BZ_CHARTJS_PIE" Table.
 	Click "Settings" icon.
 	Click "Get Started" button.
 	Click "Data" tab.
 	Enter data into Data and Label fields.
+	Create a relationship between "YOUR_SOLUTION" and "BZ_CHARTJS_PIE" Table.
 ```
 
 • Import data using script to set "BZ_CHARTJS_PIE::data" and "BZ_CHARTJS_PIE::labels" fields:
