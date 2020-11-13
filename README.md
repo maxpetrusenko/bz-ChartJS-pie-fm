@@ -25,15 +25,6 @@ You also need to specify an array of labels so that tooltips appear correctly.
 	Commit Records/Requests [ With dialog: Off ]
 ```
 
-• Import data using data from related fields:
-```
-	Create a needed relationship.
-	Open File -> Manage -> Database.
-	Select "BZ_CHARTJS_PIE" table. Click on "CHART_OBJECT" field. Select Options.
-	Edit line "	~json = If ( IsEmpty ( data )  ; ~json ; JSONSetElement ( ~json ; "data.datasets[0].data"  ; data ; 4 ));".
-	Replace it with "~json = If ( IsEmpty ( YourRelatedFieldName ) ; ~json ; JSONSetElement ( ~json ; "data.datasets[0].data"  ; charts.ListToArray ( YourRelatedFieldName ) ; 4 ));"
-```
-
 • Import data using Execute FileMaker Data API script step:
 ```
 	Table where your data lives MUST have fields called "DATA" and "LABELS".
@@ -41,5 +32,14 @@ You also need to specify an array of labels so that tooltips appear correctly.
 	Go to "Scripts -> Script Workspace -> BZ_CHARTJS_PIE -> getData".
 	Edit variable $_query to point to you data table.
 	Edit variable $_req. Point "layouts" key to you data api layout.
+```
+
+• Import data using data from related fields:
+```
+	Create a needed relationship.
+	Open File -> Manage -> Database.
+	Select "BZ_CHARTJS_PIE" table. Click on "CHART_OBJECT" field. Select Options.
+	Edit line "	~json = If ( IsEmpty ( data )  ; ~json ; JSONSetElement ( ~json ; "data.datasets[0].data"  ; data ; 4 ));".
+	Replace it with "~json = If ( IsEmpty ( YourRelatedFieldName ) ; ~json ; JSONSetElement ( ~json ; "data.datasets[0].data"  ; charts.ListToArray ( YourRelatedFieldName ) ; 4 ));"
 ```
 
